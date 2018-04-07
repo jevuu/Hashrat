@@ -687,6 +687,7 @@ host_alias
 target_alias
 CC
 CFLAGS
+CFLAGSH
 LDFLAGS
 LIBS
 CPPFLAGS
@@ -2697,12 +2698,14 @@ if test "$ac_test_CFLAGS" = set; then
 elif test $ac_cv_prog_cc_g = yes; then
   if test "$GCC" = yes; then
     CFLAGS="-g -O2"
+    CFLAGSH="-g -O3"
   else
     CFLAGS="-g"
   fi
 else
   if test "$GCC" = yes; then
     CFLAGS="-O2"
+    CFLAGSH="-O3"
   else
     CFLAGS=
   fi
